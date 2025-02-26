@@ -2,9 +2,9 @@ from datetime import datetime
 from enum import Enum, auto
 
 # Constants
-SCREEN_WIDTH = 40
-DATA_FILE_NAME = "data\expenses.txt"
-LOG_FILE_NAME = "logs\logs.txt"
+SCREEN_WIDTH = 100
+DATA_FILE_NAME = "data/expenses.txt"
+LOG_FILE_NAME = "logs/logs.txt"
 
 class Logtype(Enum):
     WARNING = auto()
@@ -119,8 +119,6 @@ def add_expense() -> dict:
             break
         print("Desciption cannot be empty. Please try again.")
 
-    
-
     # Create and return the expense dictionary
     expense = {
         "Date": date,
@@ -131,19 +129,26 @@ def add_expense() -> dict:
     
     return expense      
 
+# Function to view all expenses
 def view_expenses(expenses : list):
-    for item in expenses:
-        date = item["Date"]
-        category = item["Category"]
-        amount = item["Amount"]
-        description = item["Description"]
+    print_border()
+    print("\n" + "Date" + "\t" + "Category" + "\t" + "Amount" + "\t" + "Description" + "\n")
+    print_border()
+    expense_count = 0
+    for expense in expenses:
+        print(expense["Date"] + "\t" + expense["Category"] + "\t" + expense["Amount"] + "\t" + expense["Description"] + "\n")
+        expense_count +=1
 
+    print_border()
+    print(f"Number of expense items : {expense_count}")
+    print_border()
 
 
 # Main function to run the menu in a loop
 def main():
     # Load the expenses initially if the file exist
     expenses = load_expenses(DATA_FILE_NAME)
+    budget = 0
     
     while True:
         print_header()
@@ -151,11 +156,12 @@ def main():
 
         match menu_choice:
             case "1":
-                print("\nUser chose to add an expense")
                 expenses.append(add_expense())
-                print(expenses)
+                print("\nExpense added to the list")
+                input("Press Enter to continue....")
             case "2":
-                print("\nUser chose to view expenses")
+                view_expenses(expenses)
+                input("Press Enter to continue....")
             case "3":
                 print("\nUser chose to track budget")
             case "4":
