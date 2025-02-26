@@ -83,3 +83,63 @@
 2025-02-26 21:55:50.756951: ERROR: Invalid data in file 'data/expenses.txt', Line number 12 : 
 2025-02-26 21:55:50.756951: ERROR: Invalid data in file 'data/expenses.txt', Line number 13 : 
 2025-02-26 21:55:50.756951: ERROR: Invalid data in file 'data/expenses.txt', Line number 14 : 
+2025-02-26 22:00:40.185299: ERROR: Invalid data in file 'data/expenses.txt', Line number 2 : 26-02-2025, Travel, 1750.00, Test1
+2025-02-26 22:00:40.185299: ERROR: Invalid data in file 'data/expenses.txt', Line number 3 : 2025-02-26, , 150.00, Test
+2025-02-26 22:00:40.185299: ERROR: Invalid data in file 'data/expenses.txt', Line number 4 : 2025-02-26, Food, a150.00, Test
+2025-02-26 22:00:40.185299: ERROR: Invalid data in file 'data/expenses.txt', Line number 5 : 2025-02-26, Food, a150.00,
+2025-02-26 22:00:40.185299: ERROR: Invalid data in file 'data/expenses.txt', Line number 6 : a150.00, Test
+2025-02-26 22:00:40.186607: ERROR: Invalid data in file 'data/expenses.txt', Line number 7 : 2025-02-26, Food, a150.00, Test, abcd
+2025-02-26 22:00:40.186607: ERROR: Invalid data in file 'data/expenses.txt', Line number 9 : 
+2025-02-26 22:00:40.186607: ERROR: Invalid data in file 'data/expenses.txt', Line number 10 : 
+2025-02-26 22:00:40.186607: ERROR: Invalid data in file 'data/expenses.txt', Line number 11 : 
+2025-02-26 22:00:40.186607: ERROR: Invalid data in file 'data/expenses.txt', Line number 12 : 
+2025-02-26 22:00:40.186607: ERROR: Invalid data in file 'data/expenses.txt', Line number 13 : 
+2025-02-26 22:00:40.186607: ERROR: Invalid data in file 'data/expenses.txt', Line number 14 : 
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 2 : 26-02-2025, Travel, 1750.00, Test1
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 3 : 2025-02-26, , 150.00, Test
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 4 : 2025-02-26, Food, a150.00, Test
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 5 : 2025-02-26, Food, a150.00,
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 6 : a150.00, Test
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 7 : 2025-02-26, Food, a150.00, Test, abcd
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 9 : 
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 10 : 
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 11 : 
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 12 : 
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 13 : 
+2025-02-26 22:03:37.438391: ERROR: Invalid data in file 'data/expenses.txt', Line number 14 : 
+2025-02-26 22:05:14.093261: ERROR: Invalid data in file 'data/expenses.txt', Line number 2 : 26-02-2025, Travel, 1750.00, Test1
+2025-02-26 22:05:14.093261: ERROR: Invalid data in file 'data/expenses.txt', Line number 3 : 2025-02-26, , 150.00, Test
+2025-02-26 22:05:14.093261: ERROR: Invalid data in file 'data/expenses.txt', Line number 4 : 2025-02-26, Food, a150.00, Test
+2025-02-26 22:05:14.093261: ERROR: Invalid data in file 'data/expenses.txt', Line number 5 : 2025-02-26, Food, a150.00,
+2025-02-26 22:05:14.107922: ERROR: Invalid data in file 'data/expenses.txt', Line number 6 : a150.00, Test
+2025-02-26 22:05:14.107922: ERROR: Invalid data in file 'data/expenses.txt', Line number 7 : 2025-02-26, Food, a150.00, Test, abcd
+2025-02-26 22:05:14.107922: ERROR: Invalid data in file 'data/expenses.txt', Line number 9 : 
+2025-02-26 22:05:14.107922: ERROR: Invalid data in file 'data/expenses.txt', Line number 10 : 
+2025-02-26 22:05:14.108930: ERROR: Invalid data in file 'data/expenses.txt', Line number 11 : 
+2025-02-26 22:05:14.108930: ERROR: Invalid data in file 'data/expenses.txt', Line number 12 : 
+2025-02-26 22:05:14.108930: ERROR: Invalid data in file 'data/expenses.txt', Line number 13 : 
+2025-02-26 22:05:14.108930: ERROR: Invalid data in file 'data/expenses.txt', Line number 14 : 
+2025-02-26 22:06:41.014447: ERROR: Invalid data in file 'data/expenses.txt', Line number 2 : 26-02-2025, Travel, 1750.00, Test1
+2025-02-26 22:06:41.014447: ERROR: Invalid data in file 'data/expenses.txt', Line number 3 : 2025-02-26, , 150.00, Test
+2025-02-26 22:06:41.015332: ERROR: Invalid data in file 'data/expenses.txt', Line number 4 : 2025-02-26, Food, a150.00, Test
+2025-02-26 22:06:41.015332: ERROR: Invalid data in file 'data/expenses.txt', Line number 5 : 2025-02-26, Food, a150.00,
+2025-02-26 22:06:41.015332: ERROR: Invalid data in file 'data/expenses.txt', Line number 6 : a150.00, Test
+2025-02-26 22:06:41.015332: ERROR: Invalid data in file 'data/expenses.txt', Line number 7 : 2025-02-26, Food, a150.00, Test, abcd
+2025-02-26 22:06:41.016332: ERROR: Invalid data in file 'data/expenses.txt', Line number 9 : 
+2025-02-26 22:06:41.016332: ERROR: Invalid data in file 'data/expenses.txt', Line number 10 : 
+2025-02-26 22:06:41.016332: ERROR: Invalid data in file 'data/expenses.txt', Line number 11 : 
+2025-02-26 22:06:41.016332: ERROR: Invalid data in file 'data/expenses.txt', Line number 12 : 
+2025-02-26 22:06:41.016332: ERROR: Invalid data in file 'data/expenses.txt', Line number 13 : 
+2025-02-26 22:06:41.016332: ERROR: Invalid data in file 'data/expenses.txt', Line number 14 : 
+2025-02-26 22:09:34.474601: ERROR: Invalid data in file 'data/expenses.txt', Line number 2 : 26-02-2025, Travel, 1750.00, Test1
+2025-02-26 22:09:34.474601: ERROR: Invalid data in file 'data/expenses.txt', Line number 3 : 2025-02-26, , 150.00, Test
+2025-02-26 22:09:34.482779: ERROR: Invalid data in file 'data/expenses.txt', Line number 4 : 2025-02-26, Food, a150.00, Test
+2025-02-26 22:09:34.482779: ERROR: Invalid data in file 'data/expenses.txt', Line number 5 : 2025-02-26, Food, a150.00,
+2025-02-26 22:09:34.482779: ERROR: Invalid data in file 'data/expenses.txt', Line number 6 : a150.00, Test
+2025-02-26 22:09:34.482779: ERROR: Invalid data in file 'data/expenses.txt', Line number 7 : 2025-02-26, Food, a150.00, Test, abcd
+2025-02-26 22:09:34.482779: ERROR: Invalid data in file 'data/expenses.txt', Line number 9 : 
+2025-02-26 22:09:34.482779: ERROR: Invalid data in file 'data/expenses.txt', Line number 10 : 
+2025-02-26 22:09:34.482779: ERROR: Invalid data in file 'data/expenses.txt', Line number 11 : 
+2025-02-26 22:09:34.482779: ERROR: Invalid data in file 'data/expenses.txt', Line number 12 : 
+2025-02-26 22:09:34.482779: ERROR: Invalid data in file 'data/expenses.txt', Line number 13 : 
+2025-02-26 22:09:34.482779: ERROR: Invalid data in file 'data/expenses.txt', Line number 14 : 

@@ -132,11 +132,11 @@ def add_expense() -> dict:
 # Function to view all expenses
 def view_expenses(expenses : list):
     print_border()
-    print("\n" + "Date" + "\t" + "Category" + "\t" + "Amount" + "\t" + "Description" + "\n")
+    print("\n" + "Date" + "," + "Category" + "," + "Amount" + "," + "Description" + "\n")
     print_border()
     expense_count = 0
     for expense in expenses:
-        print(expense["Date"] + "\t" + expense["Category"] + "\t" + expense["Amount"] + "\t" + expense["Description"] + "\n")
+        print(expense["Date"] + "," + expense["Category"] + "," + expense["Amount"] + "," + expense["Description"] + "\n")
         expense_count +=1
 
     print_border()
@@ -149,15 +149,16 @@ def main():
     # Load the expenses initially if the file exist
     expenses = load_expenses(DATA_FILE_NAME)
     budget = 0
-    
+
     while True:
         print_header()
         menu_choice = get_menu_choice()
 
         match menu_choice:
             case "1":
-                expenses.append(add_expense())
-                print("\nExpense added to the list")
+                expense = add_expense()
+                expenses.append(expense)
+                print("\nExpense added to the list : ", expense)
                 input("Press Enter to continue....")
             case "2":
                 view_expenses(expenses)
