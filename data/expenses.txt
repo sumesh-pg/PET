@@ -3,3 +3,4 @@
 2025-02-27,Entertainment,1500,Movie
 2025-02-27,Test,2500,Test
 2023-05-02,One more,2000,Once again
+2025-01-01,Test,2100.25,Test
