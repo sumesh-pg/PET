@@ -155,3 +155,20 @@
 2025-02-27 19:31:33.374136: ERROR: Invalid data in file 'data/expenses.txt', Line number 12 : 
 2025-02-27 19:31:33.374136: ERROR: Invalid data in file 'data/expenses.txt', Line number 13 : 
 2025-02-27 19:31:33.374136: ERROR: Invalid data in file 'data/expenses.txt', Line number 14 : 
+2025-02-27 20:24:17.824004: WARNING: Budget file not found : data/budget.txt
+2025-02-27 20:27:05.361174: WARNING: Budget file not found : data/budget.txt
+2025-02-27 20:31:09.074531: WARNING: Budget file not found : data/budget.txt
+2025-02-27 22:13:57.679342: WARNING: Budget file not found : data/budget.txt
+2025-02-27 22:16:05.918056: WARNING: Budget file not found : data/budget.txt
+2025-02-27 22:19:06.210733: WARNING: Budget file not found : data/budget.txt
+2025-02-27 22:19:41.297393: WARNING: Budget file not found : data/budget.txt
+2025-02-27 22:22:49.859280: WARNING: Budget file not found : data/budget.txt
+2025-02-27 22:23:31.934380: ERROR: Unknown error occurred while saving budget : write() argument must be str, not float
+2025-02-27 22:26:49.258733: ERROR: Budget file contains invalid data
+2025-02-27 22:27:09.179027: ERROR: Unknown error occurred while saving budget : write() argument must be str, not float
+2025-02-27 22:28:21.299006: ERROR: Budget file contains invalid data
+2025-02-27 22:28:53.387885: ERROR: Budget file contains invalid data
+2025-02-27 22:31:11.454336: ERROR: Unknown error occurred while saving budget : write() argument must be str, not float
+2025-02-27 22:38:21.754370: ERROR: Budget file contains invalid data
+2025-02-27 22:38:54.206308: INFORMATION: Budget is written to file
+2025-02-27 22:42:37.882383: INFORMATION: Budget is written to file
