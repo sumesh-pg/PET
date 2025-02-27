@@ -129,6 +129,10 @@ def add_expense() -> dict:
     
     return expense      
 
+# Function to conver expense as string
+def get_expense_string(expense : dict) -> str:
+    return expense["Date"] + "," + expense["Category"] + "," + expense["Amount"] + "," + expense["Description"] + "\n"
+
 # Function to view all expenses
 def view_expenses(expenses : list):
     print_border()
@@ -136,12 +140,22 @@ def view_expenses(expenses : list):
     print_border()
     expense_count = 0
     for expense in expenses:
-        print(expense["Date"] + "," + expense["Category"] + "," + expense["Amount"] + "," + expense["Description"] + "\n")
+        print(get_expense_string(expense))
         expense_count +=1
 
     print_border()
     print(f"Number of expense items : {expense_count}")
     print_border()
+
+# Function to save all expenses to text file
+def save_expenses(expenses : list, file_name : str):
+    try:
+        with open(file_name, "w") as file:
+            for expense in expenses:
+                file.write(get_expense_string(expense))
+
+    except Exception as e:
+        log_data(f"Unknown error in saving expenses : {e}", Logtype.ERROR)
 
 
 # Main function to run the menu in a loop
@@ -166,9 +180,13 @@ def main():
             case "3":
                 print("\nUser chose to track budget")
             case "4":
-                print("\nUser chose to save expenses")
+                save_expenses(expenses, DATA_FILE_NAME)
+                print(f"\nExpenses saved to file {DATA_FILE_NAME}")
+                input("Press Enter to continue....")
             case "5":
-                print("Thank you for using PET. Visit again!!!")
+                print_border()
+                print("\nThank you for using PET. Visit again!!!\n")
+                print_border()
                 break
             case _:
                 print("\nInvalid choice. Please try again.\n")
