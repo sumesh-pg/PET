@@ -1,3 +1,5 @@
 2025-02-26,Food,150.00,Yummy food
 2025-02-26,Travel,1750.00,My first trip
 2025-02-27,Entertainment,1500,Movie
+2025-02-27,Test,2500,Test
+2023-05-02,One more,2000,Once again
