@@ -1,7 +1,7 @@
 from constants import EXPENSE_FILE_NAME, BUDGET_FILE_NAME, SCREEN_WIDTH, MenuChoice
 from utils import print_border
 from expense_manager import load_expenses, save_expenses, add_expense, view_expenses
-from budget_manager import load_budget, save_budget, compare_budget
+from budget_manager import load_budget, track_budget
 
 def print_header(total_expenses, budget):
     """Prints the application header with budget details."""
@@ -35,7 +35,9 @@ def main():
             expenses.append(expense)
             total_expenses += float(expense["Amount"])
             expenses_to_save = True
-            print(f"Expense added successfully. {expense}")
+            print(f"\nExpense added successfully. {expense}")
+            if total_expenses > budget:
+                print(f"\nYou have overspent your budget by {(total_expenses - budget):.2f}")
             input("Press Enter to continue.....")
 
         elif choice == MenuChoice.VIEW_EXPENSE.value:
@@ -43,10 +45,11 @@ def main():
             input("Press Enter to continue.....")
 
         elif choice == MenuChoice.TRACK_BUDGET.value:
-            print(f"Current budget amount is : {budget}")
-            budget = float(input("Enter new budget: ") or budget)
-            compare_budget(budget, total_expenses)
-            save_budget(budget, BUDGET_FILE_NAME)
+            # print(f"Current budget amount is : {budget}")
+            # budget = float(input("Enter new budget: ") or budget)
+            # compare_budget(budget, total_expenses)
+            # save_budget(budget, BUDGET_FILE_NAME)
+            track_budget(budget, total_expenses, BUDGET_FILE_NAME)
             input("Press Enter to continue.....")
 
         elif choice == MenuChoice.SAVE_EXPENSE.value:

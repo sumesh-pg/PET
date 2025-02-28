@@ -9,3 +9,10 @@
 2025-02-05,Travel                   ,2450           ,To Tirupati
 2023-05-01,Medical Expense          ,50000          ,Cataract surgery
 2025-02-01,This is a test to check t,2000           ,This is another test to check the max character again
+2026-07-22,Food                     ,1000           ,Domino
+2024-05-26,Clothes                  ,6999.50        ,Anniversary
+2025-01-01,Gamble                   ,10000          ,them black money
+3000-01-02,my 100th b-day           ,200            ,for my grave
+2025-01-22,10000                    ,10000          ,Test
+2023-05-02,Test                     ,1000           ,test
+2022-02-02,test                     ,100            ,test

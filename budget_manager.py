@@ -1,6 +1,20 @@
 import os
 from logger import log_data
 from constants import LogType
+from utils import is_valid_amount
+
+def track_budget(budget, total_expenses, file_name):
+    print(f"\nCurrent budget amount is : {budget:.2f}")
+    while True:
+        budget_str = input("Enter new budget: ") or budget
+        if is_valid_amount(budget_str):
+            break
+        print("\nInvalid Budget amount. Please try again")
+
+    budget = float(budget_str)
+    print(f"\nNew budget is : {budget:.2f}")
+    compare_budget(budget, total_expenses)
+    save_budget(budget, file_name) 
 
 def load_budget(file_name: str) -> float:
     """Loads the budget from a file."""
