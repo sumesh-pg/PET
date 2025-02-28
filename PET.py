@@ -7,7 +7,7 @@ def print_header(total_expenses, budget):
     """Prints the application header with budget details."""
     print_border()
     print("PET - Personal Expense Tracker".center(SCREEN_WIDTH) + "\n")
-    print(f"Total Expenses: {total_expenses:.2f} | Budget: {budget:.2f} | Remaining: {(budget - total_expenses):.2f}".center(SCREEN_WIDTH))
+    print(f"Budget: {budget:.2f} | Total Expenses: {total_expenses:.2f} | {"Remaining" if budget > total_expenses else "Overspend"}: {abs((budget - total_expenses)):.2f}".center(SCREEN_WIDTH))
     print_border()
 
 def get_menu_choice():
@@ -35,29 +35,34 @@ def main():
             expenses.append(expense)
             total_expenses += float(expense["Amount"])
             expenses_to_save = True
-            print("Expense added successfully.")
+            print(f"Expense added successfully. {expense}")
+            input("Press Enter to continue.....")
 
         elif choice == MenuChoice.VIEW_EXPENSE.value:
             view_expenses(expenses)
+            input("Press Enter to continue.....")
 
         elif choice == MenuChoice.TRACK_BUDGET.value:
+            print(f"Current budget amount is : {budget}")
             budget = float(input("Enter new budget: ") or budget)
             compare_budget(budget, total_expenses)
             save_budget(budget, BUDGET_FILE_NAME)
+            input("Press Enter to continue.....")
 
         elif choice == MenuChoice.SAVE_EXPENSE.value:
             save_expenses(expenses, EXPENSE_FILE_NAME)
             expenses_to_save = False
             print("Expenses saved.")
+            input("Press Enter to continue.....")
 
         elif choice == MenuChoice.EXIT.value:
             if expenses_to_save:
                 save_expenses(expenses, EXPENSE_FILE_NAME)
-            print("Thank you for using PET!")
+            print("Thank you for using PET!!!")
             break
 
         else:
-            print("Invalid choice. Please try again.")
+            print("\nInvalid choice. Please try again.\n")
 
 if __name__ == "__main__":
     main()

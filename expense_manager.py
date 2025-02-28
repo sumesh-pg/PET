@@ -1,6 +1,6 @@
 import os
 from logger import log_data
-from constants import LogType
+from constants import LogType, PRINT_DATE_WIDTH, PRINT_AMOUNT_WIDTH, PRINT_CATEGORY_WIDTH
 from utils import print_border, is_valid_date, is_valid_amount
 
 def load_expenses(file_name: str):
@@ -29,7 +29,8 @@ def save_expenses(expenses: list, file_name: str):
     try:
         with open(file_name, "w") as file:
             for expense in expenses:
-                file.write(f"{expense['Date']},{expense['Category']},{expense['Amount']},{expense['Description']}\n")
+                file.write(get_expense_string(expense))
+                #file.write(f"{expense['Date'].ljust(PRINT_DATE_WIDTH)},{expense['Category'].ljust(PRINT_CATEGORY_WIDTH)},{expense['Amount'].ljust(PRINT_AMOUNT_WIDTH)},{expense['Description'].ljust(PRINT_DESCRIPTION_WIDTH)}\n")
     except Exception as e:
         log_data(f"Error saving expenses: {e}", LogType.ERROR)
 
@@ -46,7 +47,7 @@ def add_expense() -> dict:
         print("Invalid date format. Please try again.")
 
     while True:
-        category = input("Enter category (e.g., Food, Travel): ").strip()
+        category = input(f"Enter category (e.g., Food, Travel - max {PRINT_CATEGORY_WIDTH} characters) : ").strip()[:PRINT_CATEGORY_WIDTH]
         if category:
             break
         print("Category cannot be empty. Please try again.")
@@ -73,7 +74,7 @@ def add_expense() -> dict:
 def view_expenses(expenses: list):
     """Displays all stored expenses."""
     print_border()
-    print("DATE       | CATEGORY       | AMOUNT | DESCRIPTION")
+    print("DATE".ljust(PRINT_DATE_WIDTH) + "," + "CATEGORY".ljust(PRINT_CATEGORY_WIDTH) + "," + "AMOUNT".ljust(PRINT_AMOUNT_WIDTH) + "," + "DESCRIPTION")
     print_border()
 
     for expense in expenses:
@@ -82,8 +83,8 @@ def view_expenses(expenses: list):
     print_border()
     print(f"Total Expenses: {len(expenses)} items")
     print_border()
-    input("Press Enter to continue...")
 
 def get_expense_string(expense: dict) -> str:
     """Formats an expense dictionary into a string for file storage or display."""
-    return f"{expense['Date']},{expense['Category']},{expense['Amount']},{expense['Description']}\n"    
+    return f"{expense['Date'].ljust(PRINT_DATE_WIDTH)},{expense['Category'].ljust(PRINT_CATEGORY_WIDTH)},{expense['Amount'].ljust(PRINT_AMOUNT_WIDTH)},{expense['Description']}\n"
+
