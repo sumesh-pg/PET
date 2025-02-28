@@ -1,6 +1,11 @@
-2025-02-26,Food,150.00,Yummy food
-2025-02-26,Travel,1750.00,My first trip
-2025-02-27,Entertainment,1500,Movie
-2025-02-27,Test,2500,Test
-2023-05-02,One more,2000,Once again
-2025-01-01,Test,2100.25,Test
+2025-02-26,Food                     ,150.00         ,Yummy food
+2025-02-26,Travel                   ,1750.00        ,My first trip
+2025-02-27,Entertainment            ,1500           ,Movie
+2025-02-27,Test                     ,2500           ,Test
+2023-05-02,One more                 ,2000           ,Once again
+2025-01-01,Test                     ,2100.25        ,Test
+2025-02-01,Abcd                     ,1200           ,Not sure
+2025-02-01,Food                     ,1350.25        ,Ambur Biriyani
+2025-02-05,Travel                   ,2450           ,To Tirupati
+2023-05-01,Medical Expense          ,50000          ,Cataract surgery
+2025-02-01,This is a test to check t,2000           ,This is another test to check the max character again
