@@ -44,14 +44,14 @@ python PET.py
 ## File Structure
 
 - `PET.py` – Main script containing the application logic.
-- `data/expenses.txt` – File to store recorded expenses.
-- `data/budget.txt` – File to store the budget amount.
-- `logs/logs.txt` – Log file for warnings, errors, and informational messages.
 - `budget_manager.py` – Module handling budget-related functionalities.
 - `expense_manager.py` – Module managing expense operations.
 - `logger.py` – Module for logging system activities.
 - `constants.py` – Module defining constant values used across the application.
 - `utils.py` – Module containing utility functions.
+- `data/expenses.txt` – File to store recorded expenses.
+- `data/budget.txt` – File to store the budget amount.
+- `logs/logs.txt` – Log file for warnings, errors, and informational messages.
 
 ## Logging System
 
