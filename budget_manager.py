@@ -3,7 +3,7 @@ from logger import log_data
 from constants import LogType
 from utils import is_valid_amount
 
-def track_budget(budget, total_expenses, file_name):
+def track_budget(budget, total_expenses, file_name) -> float:
     print(f"\nCurrent budget amount is : {budget:.2f}")
     while True:
         budget_str = input("Enter new budget: ") or budget
@@ -15,6 +15,7 @@ def track_budget(budget, total_expenses, file_name):
     print(f"\nNew budget is : {budget:.2f}")
     compare_budget(budget, total_expenses)
     save_budget(budget, file_name) 
+    return budget
 
 def load_budget(file_name: str) -> float:
     """Loads the budget from a file."""

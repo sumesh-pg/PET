@@ -49,7 +49,7 @@ def main():
             # budget = float(input("Enter new budget: ") or budget)
             # compare_budget(budget, total_expenses)
             # save_budget(budget, BUDGET_FILE_NAME)
-            track_budget(budget, total_expenses, BUDGET_FILE_NAME)
+            budget = track_budget(budget, total_expenses, BUDGET_FILE_NAME)
             input("Press Enter to continue.....")
 
         elif choice == MenuChoice.SAVE_EXPENSE.value:

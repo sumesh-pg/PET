@@ -1,18 +1,8 @@
-2025-02-26,Food                     ,150.00         ,Yummy food
-2025-02-26,Travel                   ,1750.00        ,My first trip
-2025-02-27,Entertainment            ,1500           ,Movie
-2025-02-27,Test                     ,2500           ,Test
-2023-05-02,One more                 ,2000           ,Once again
-2025-01-01,Test                     ,2100.25        ,Test
-2025-02-01,Abcd                     ,1200           ,Not sure
-2025-02-01,Food                     ,1350.25        ,Ambur Biriyani
-2025-02-05,Travel                   ,2450           ,To Tirupati
-2023-05-01,Medical Expense          ,50000          ,Cataract surgery
-2025-02-01,This is a test to check t,2000           ,This is another test to check the max character again
-2026-07-22,Food                     ,1000           ,Domino
-2024-05-26,Clothes                  ,6999.50        ,Anniversary
-2025-01-01,Gamble                   ,10000          ,them black money
-3000-01-02,my 100th b-day           ,200            ,for my grave
-2025-01-22,10000                    ,10000          ,Test
-2023-05-02,Test                     ,1000           ,test
-2022-02-02,test                     ,100            ,test
+2025-03-01,Food                     ,1200.15        ,Burger from KFC
+2025-02-28,Travel                   ,3000.00        ,Filled petrol in the car
+2025-02-01,Maintenance              ,5000.00        ,Monthly Association maintenance charges
+2025-02-01,Utility bils             ,2000.00        ,Broadband charges
+2025-02-01,Utility Bills            ,9000.00        ,Electricity bills
+2025-02-05,Groceries                ,4500.00        ,All groceries for the month
+2025-02-07,Vegetables               ,1250.00        ,Vegetables for a week
+2025-02-15,Investment               ,1000.00        ,Mutual Funds
